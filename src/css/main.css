@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.rubik {
+  font-family: 'Rubik', sans-serif;
+}
+
+.bg-featured {
+  background-image: url('../images/Intern-Cover_Image_joe2-2000x1224.jpg');
+}
+
+.cover-title {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background-image: url('../images/play-button.svg');
+}
+
+.playing .play-button {
+  background-image: url('../images/pause-button.svg');
+}
+
+.archive .play-button {
+  width: 36px;
+  height: 36px;
+}
+
+.mixes .play-button {
+  width: 48px;
+  height: 48px;
+}
+
+.button {
+  border: none;
+  outline: none;
+}
+
+.mixes {
+  padding-bottom: 5rem;
+}
+
+.mix {
+  width: calc(50% - 1rem);
+}
+
+.mix:nth-of-type(even) {
+  transform: translateY(4rem);
+}
+
+.nav-link {
+  border-bottom: solid 3px rgba(0, 0, 0, 0);
+}
+
+.nav-link.active {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.mix-overlay:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
